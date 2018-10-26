@@ -132,3 +132,12 @@ constant(str constant_name)
 判断一个常量是否定义：
 defined() 函数 defined(str constant_name)  成功返回true
 [常量的定义、获取、判断](./chapter_3/example_3.9.php)
+
+## 预定义常量
+常见预定义常量
+
+|常量名|功能|
+|-|-|
+|\_\_FILE__|默认常量，php程序文件名|
+|\_\_LINE__|默认常量，php程序行数|
+|PHP_VERSION|内建常量
