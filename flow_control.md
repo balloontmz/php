@@ -36,5 +36,9 @@ foreach 只能用于数组 和 对象。主要是数组
 在使用循环语句时，有时不确定循环的次数，遇到这样的情况可以使用无限循环。当程序代码块满足某个条件后，
 采用关键字break 和 continue跳出循环
 ### break 语句
+[break跳出一层和多层循环](./chapter_4_flow_control/example_4.9.php)
 break 关键字可以终止当前的循环，包括while、do while、for、foreach、switch在内的所有控制语句。
-break不但可以退出当前的循环，还可以指定跳出几重循环。
+break不但可以退出当前的循环，还可以指定跳出几重循环。break 不带参数的情况下默认跳出一层循环
+
+### continue 语句
+continue关键字的作用没有break强大，它只能终止本次循环而进入到下一次循环中，也可以指定跳出几重循环。
