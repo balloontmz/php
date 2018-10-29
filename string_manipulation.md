@@ -101,6 +101,9 @@ echo substr_count($str, "词");           // 输出查询的字符串出现的�
 检索子串一般出现在搜索引擎中，针对子串在字符串中出现的次数进行统计，便于用户第一时间掌控子串在字符串中出现的次数。
 
 ## 替换字符串
+
+[str_ireplace str_replace substr_replace 三个函数的简单使用。前两个函数相当于简单的字符替换，只要满足替换条件，均替换。
+sub则指定了替换位置，一个函数只替换一次，就是在函数指定的位置。](./chapter_5_str_manipulation/example_5.16.php)
 1. 两个函数 str_ireplace() （忽略大小写）和 str_replace() （不忽略大小写）,
 语法格式如下：
 mixed str_ireplace(mixed search, mixed replace, mixed subject[, int &count])
@@ -115,3 +118,40 @@ mixed str_ireplace(mixed search, mixed replace, mixed subject[, int &count])
 mixed substr_replace(mixed string, mixed repl, mixed start[, mixed length])
 string: 指定要操作的原始字符串，可以是字符串或数组
 repl: 指定替换后的新字符串
+start: 指定替换字符串开始的位置。正数表示从第start位置开始，负数表示从倒数第start位置开始
+length: 可选参数，指定返回字符串的长度。正数表示被截取的字符串的长度，负数表示待替换的字符串结尾的倒序序号，
+0代表插入到string的start位置处
+note: 如果参数start设置为负值，而参数length数值小于或者等于start数值，那么length参数自动为0.
+
+## 格式化字符串
+### 字符串的格式化
+
+### 数字的格式化
+number_format 函数用来将数字字符串格式化
+语法格式如下：
+string number_format(float number[, int decimals[, string dec_point[, sting thousands_sep]]])
+number 表示要格式化的数字
+decimals 为要保留的小数位数
+dec_point 为指定小数点显示的字符
+thousands_sep 为指定千分分隔符显示的字符
+该函数不能传入三个参数，也就是dec_point 和 thousands_sep 参数必须同时存在或者同时不在
+
+## 分割、合成字符串
+[分割合成字符串](./chapter_5_str_manipulation/example_5.19.php)
+1. 字符串的分割是通过explode函数实现的。explode函数按照制定的规则对一个字符串进行分割，返回值为数组
+语法格式如下：
+array explode(string delimiter, string str[, int limit])
+delimiter 边界上的分割字符
+str 必要参数，指定将被分割的字符串
+limit 可选参数，指定返回的数组最多包含的元素个数，最后一个元素将包含str的剩余部分。如果是负数，则返回除了
+最后limit个元素外的所有元素，如果是0，则默认为1
+
+输出数组元素除了使用 print_r 函数外，还可以使用echo输出，不过echo只能输出简单的数据类型，所以需要手动取值 
+
+2. 合成字符串
+implode 函数可以将数组的内容组合成一个新的字符串
+语法格式如下：
+string implode(string glue, array pieces)
+glue 表示字符串，指定分隔符，如果不传入，将直接省略。
+pieces 表示要合并的数组，如果不传入glue，则此参数作为唯一参数传入
+和 explode 相对应。
