@@ -1,0 +1,11 @@
+（！）警告：fopen（04.txt）：无法打开流：第9行的D：\ wamp \ www \ php \ chaptet_13_file_operation \ example_13.4.php中没有此类文件或目录
+调用堆栈
+＃	时间	记忆	功能	地点
+1	0.0005	363680	{main}（）	... \ example_13.4.php ： 0
+2	0.0005	363744	fopen （）	...... \ example_13.4.php ： 9
+
+（！）警告：fread（）期望参数1是资源，布尔值在第10行的D：\ wamp \ www \ php \ chaptet_13_file_operation \ example_13.4.php中给出
+调用堆栈
+＃	时间	记忆	功能	地点
+1	0.0005	363680	{main}（）	... \ example_13.4.php ： 0
+2	0.0031	364576	fread （）	...... \ example_13.4.php ： 10

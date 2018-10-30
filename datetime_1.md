@@ -73,3 +73,38 @@ bool checkdate(int mouth, int day, int year)
 格式化时间函数date() 的format 参数有非常多的可选项。
 [文档在此](http://php.net/manual/en/function.date.php)
 
+## 显示本地化的日期时间
+apache服务器 conf/httpd-vhost 文件   php项目的相关配置
+1. setlocale() 函数可以改变php默认的本地化环境
+语法格式如下：
+string setlocale(string category, string locale)
+如果locale参数为空，就会使用系统环境变量的locale或lang的值。否则就会应用locale参数所指定的本地化环境
+
+2. strftime() 函数
+strftime() 函数根据本地化环境设置来格式化输出日期和时间
+语法格式如下：
+string strftime(string format, int timestamp)
+该函数返回用给定的字符串对参数进行格式化输出后的字符串
+[示例](./chapter_10_datetime/example_10.7.php)
+
+## 将日期和时间解析为UNIX时间戳
+[将日期和时间解析为UNIX时间戳](./chapter_10_datetime/example_10.8.php)
+strtotime() 函数，语法如下：
+int strtotime(string time[, int now])
+其中，string time 为格式化的字符串表示的时间。如果该参数是绝对时间，那么 now 参数不起作用，如果是相对时间，
+那么对应的时间就是参数 now 来提供的。如果没有参数 now ，对应的时间就为当前时间。 如果解析失败，则返回false。
+
+# 日期和时间的应用
+## 比较两个时间的大小
+在实际开发中经常对两个时间的大小进行判断，php中的时间是不可以直接进行比较的。所以，首先要将时间解析为时间
+戳的形式，然后再进行比较。strtotime 函数即可完成该操作。
+
+## 实现倒计时功能
+strtotime 相当于 date()的反函数
+date 得到格式化时间日期 
+strtotime 将格式化时间日期转换为时间戳
+
+## 计算页面脚本的执行时间
+某些时候需要计算运行时间等比较精确的时间的时候，需要用到microtime()函数。
+该函数返回当前的时间，精确到微秒。当php代码启动之前和终止之前各运行一遍，
+得到时间的差值就是运行时间。
