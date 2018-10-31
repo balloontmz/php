@@ -30,7 +30,7 @@ bool fclose(resource handle);
 
 1. 从文件中读取数据
 从文件中读取数据，可以读取一个字符、一行字符串或整个文件，还可以读取任意长度的字符串。
-    1. [读取整个文件 readfile file 和 file_get_contents](./chaptet_13_file_operation/example_13.1.php)
+    1. [读取整个文件 readfile file 和 file_get_contents](chapter_13_file_operation/example_13.1.php)
         1. readfile 函数
         
             readfile 函数用于读入一个文件并将其写入到输出缓冲，如果出现错误则返回false。语法如下：
@@ -51,7 +51,7 @@ bool fclose(resource handle);
             
     2. 读取一行数据：fgets() 和 fgetss()
         
-        [两个函数的区别， fgetss 的过滤效果展示](./chaptet_13_file_operation/example_13.2.php)
+        [两个函数的区别， fgetss 的过滤效果展示](chapter_13_file_operation/example_13.2.php)
         1. fgets() 函数 用于一次读取一行数据。函数语法如下：
             
             string fgets(resource handle[, int length])
@@ -68,7 +68,7 @@ bool fclose(resource handle);
             
     3. 读取一个字符：fgetc
         
-        [读取一个字符 fgetc ](./chaptet_13_file_operation/example_13.3.php)
+        [读取一个字符 fgetc ](chapter_13_file_operation/example_13.3.php)
         
         在对某一个字符进行查找、替换时，需要有针对性地对某个字符进行存取，在PHP中可以使用 fgetc 函数实现此功能。
         函数语法如下：
@@ -78,14 +78,14 @@ bool fclose(resource handle);
         
     4. 读取任意长度字符串 fread
         
-        [fread 的一个小练习，从此推测，在一次打开中，文件指针不自动重置](./chaptet_13_file_operation/example_13.4.php)
+        [fread 的一个小练习，从此推测，在一次打开中，文件指针不自动重置](chapter_13_file_operation/example_13.4.php)
         
         fread 可以从文件中读取指定长度的数据，函数语法如下：
         string fread(int handle, int length)
         其中，handle为指向的文件资源，length 是要读取的字节数。当函数读取 length 个字节或到达 EOF 时停止执行
         
 2. 将数据写入文件
-    [fwrite 和 file_put_contents 写入文件](./chaptet_13_file_operation/example_13.5.php)
+    [fwrite 和 file_put_contents 写入文件](chapter_13_file_operation/example_13.5.php)
     写入数据也是 php 中常用的文件操作，在 php 中使用 fwrite 和 file_put_contents 函数向文件中写入数据。
     fwrite 函数也称为 fputs ，它们的用法相同。 fwrite 函数的语法如下：
     
