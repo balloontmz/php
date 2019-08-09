@@ -1,0 +1,21 @@
+{
+    "name": "balloontmz/design-patterns",
+    "description": "this is a package for design-patterns",
+    "type": "metapackage",
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3.0",
+        "phpunit/phpunit": "^8.2.0"
+    },
+    "authors": [
+        {
+            "name": "tomtiddler",
+            "email": "balloontmz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
