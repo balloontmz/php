@@ -30,6 +30,9 @@
         <testsuite name="Singleton">
             <directory suffix="Test.php">./src/Creational/Singleton/Tests</directory>
         </testsuite>
+        <testsuite name="StaticFactory">
+            <directory suffix="Test.php">./src/Creational/StaticFactory/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
