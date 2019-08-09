@@ -21,6 +21,9 @@
         <testsuite name="Pool">
             <directory suffix="Test.php">./src/Creational/Pool/Tests</directory>
         </testsuite>
+        <testsuite name="Prototype">
+            <directory suffix="Test.php">./src/Creational/Prototype/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
