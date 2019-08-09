@@ -15,6 +15,9 @@
         <testsuite name="Builder">
             <directory suffix="Test.php">./src/Creational/Builder/Tests</directory>
         </testsuite>
+        <testsuite name="FactoryMethod">
+            <directory suffix="Test.php">./src/Creational/FactoryMethod/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
