@@ -37,6 +37,9 @@
         <testsuite name="Adapter">
             <directory suffix="Test.php">./src/Structural/Adapter/Tests</directory>
         </testsuite>
+        <testsuite name="Bridge">
+            <directory suffix="Test.php">./src/Structural/Bridge/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
