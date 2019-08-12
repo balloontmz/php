@@ -33,6 +33,10 @@
         <testsuite name="StaticFactory">
             <directory suffix="Test.php">./src/Creational/StaticFactory/Tests</directory>
         </testsuite>
+        <!-- 结构型设计模式 -->
+        <testsuite name="Adapter">
+            <directory suffix="Test.php">./src/Structural/Adapter/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
