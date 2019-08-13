@@ -46,6 +46,9 @@
         <testsuite name="DataMapper">
             <directory suffix="Test.php">./src/Structural/DataMapper/Tests</directory>
         </testsuite>
+        <testsuite name="Decorator">
+            <directory suffix="Test.php">./src/Structural/Decorator/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
