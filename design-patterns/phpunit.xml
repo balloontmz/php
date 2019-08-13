@@ -40,6 +40,9 @@
         <testsuite name="Bridge">
             <directory suffix="Test.php">./src/Structural/Bridge/Tests</directory>
         </testsuite>
+        <testsuite name="Composite">
+            <directory suffix="Test.php">./src/Structural/Composite/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
