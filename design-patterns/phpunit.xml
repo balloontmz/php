@@ -49,6 +49,9 @@
         <testsuite name="Decorator">
             <directory suffix="Test.php">./src/Structural/Decorator/Tests</directory>
         </testsuite>
+        <testsuite name="Facade">
+            <directory suffix="Test.php">./src/Structural/Facade/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
