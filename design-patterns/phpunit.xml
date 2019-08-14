@@ -61,6 +61,9 @@
         <testsuite name="Proxy">
             <directory suffix="Test.php">./src/Structural/Proxy/Tests</directory>
         </testsuite>
+        <testsuite name="Registry">
+            <directory suffix="Test.php">./src/Structural/Registry/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
