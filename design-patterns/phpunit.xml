@@ -55,6 +55,9 @@
         <testsuite name="FluentInterface">
             <directory suffix="Test.php">./src/Structural/FluentInterface/Tests</directory>
         </testsuite>
+        <testsuite name="Flyweight">
+            <directory suffix="Test.php">./src/Structural/Flyweight/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
