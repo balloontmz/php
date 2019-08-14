@@ -58,6 +58,9 @@
         <testsuite name="Flyweight">
             <directory suffix="Test.php">./src/Structural/Flyweight/Tests</directory>
         </testsuite>
+        <testsuite name="Proxy">
+            <directory suffix="Test.php">./src/Structural/Proxy/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
