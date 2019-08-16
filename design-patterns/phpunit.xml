@@ -64,6 +64,10 @@
         <testsuite name="Registry">
             <directory suffix="Test.php">./src/Structural/Registry/Tests</directory>
         </testsuite>
+        <!-- 行为型设计模式 -->
+        <testsuite name="ChainOfResponsibilities">
+            <directory suffix="Test.php">./src/Behavioral/ChainOfResponsibilities/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
