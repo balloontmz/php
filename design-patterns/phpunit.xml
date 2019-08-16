@@ -83,6 +83,9 @@
         <testsuite name="Observer">
             <directory suffix="Test.php">./src/Behavioral/Observer/Tests</directory>
         </testsuite>
+        <testsuite name="Specification">
+            <directory suffix="Test.php">./src/Behavioral/Specification/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
