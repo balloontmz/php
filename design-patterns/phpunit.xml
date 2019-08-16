@@ -71,6 +71,9 @@
         <testsuite name="Command">
             <directory suffix="Test.php">./src/Behavioral/Command/Tests</directory>
         </testsuite>
+        <testsuite name="Iterator">
+            <directory suffix="Test.php">./src/Behavioral/Iterator/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
