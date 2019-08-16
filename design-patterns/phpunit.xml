@@ -80,6 +80,9 @@
         <testsuite name="Memento">
             <directory suffix="Test.php">./src/Behavioral/Memento/Tests</directory>
         </testsuite>
+        <testsuite name="Observer">
+            <directory suffix="Test.php">./src/Behavioral/Observer/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
