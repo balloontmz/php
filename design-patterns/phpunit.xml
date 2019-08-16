@@ -74,6 +74,9 @@
         <testsuite name="Iterator">
             <directory suffix="Test.php">./src/Behavioral/Iterator/Tests</directory>
         </testsuite>
+        <testsuite name="Mediator">
+            <directory suffix="Test.php">./src/Behavioral/Mediator/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
