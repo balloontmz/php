@@ -92,6 +92,9 @@
         <testsuite name="Strategy">
             <directory suffix="Test.php">./src/Behavioral/Strategy/Tests</directory>
         </testsuite>
+        <testsuite name="TemplateMethod">
+            <directory suffix="Test.php">./src/Behavioral/TemplateMethod/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
