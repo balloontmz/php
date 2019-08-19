@@ -86,6 +86,9 @@
         <testsuite name="Specification">
             <directory suffix="Test.php">./src/Behavioral/Specification/Tests</directory>
         </testsuite>
+        <testsuite name="State">
+            <directory suffix="Test.php">./src/Behavioral/State/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
