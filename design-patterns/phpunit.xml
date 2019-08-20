@@ -98,6 +98,10 @@
         <testsuite name="Visitor">
             <directory suffix="Test.php">./src/Behavioral/Visitor/Tests</directory>
         </testsuite>
+        <!-- 其他设计模式 -->
+        <testsuite name="Delegation">
+            <directory suffix="Test.php">./src/More/Delegation/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
