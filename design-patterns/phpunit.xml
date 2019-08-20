@@ -102,6 +102,9 @@
         <testsuite name="Delegation">
             <directory suffix="Test.php">./src/More/Delegation/Tests</directory>
         </testsuite>
+        <testsuite name="Repository">
+            <directory suffix="Test.php">./src/More/Repository/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
