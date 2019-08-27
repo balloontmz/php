@@ -2,6 +2,12 @@
 
 `composer require psr/http-message`
 
+`vendor/laravel/framework/src/Illuminate/Foundation/Application.php`  这个目录包含 laravel 别名到接口以及类实现的映射
+
+`Foundation Support` 框架下两个文件夹、查找功能类和函数以此为起点寻找
+
+核心就是提供了绑定这些类和函数的一个容器
+
 ## Ioc 容器和服务提供者
 绑定别名到容器的的实例和
 绑定接口到容器中的实例
