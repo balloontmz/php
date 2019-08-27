@@ -1,0 +1,22 @@
+{
+    "name": "balloontmz/laravel-core",
+    "description": "this is a package for design-patterns",
+    "type": "metapackage",
+    "autoload": {
+        "psr-4": {
+            "LaravelCore\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3.0",
+        "phpunit/phpunit": "^8.2.0",
+        "psr/http-message": "^1.0@dev"
+    },
+    "authors": [
+        {
+            "name": "tomtiddler",
+            "email": "balloontmz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
