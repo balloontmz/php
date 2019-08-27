@@ -12,6 +12,9 @@
         <testsuite name="Ioc">
             <directory suffix="Test.php">./src/Ioc/Tests</directory>
         </testsuite>
+        <testsuite name="Oriented">
+            <directory suffix="Test.php">./src/Oriented/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
