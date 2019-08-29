@@ -23,3 +23,4 @@
 
 [call_user_func](https://www.php.net/manual/zh/function.call-user-func.php)
 
+从基类继承的成员会被 trait 插入的成员所覆盖。优先顺序是来自当前类的成员覆盖了 trait 的方法，而 trait 则覆盖了被继承的方法。

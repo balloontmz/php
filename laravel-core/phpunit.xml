@@ -15,6 +15,9 @@
         <testsuite name="Oriented">
             <directory suffix="Test.php">./src/Oriented/Tests</directory>
         </testsuite>
+        <testsuite name="Traits">
+            <directory suffix="Test.php">./src/Traits/Tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
